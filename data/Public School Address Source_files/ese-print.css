@@ -1,0 +1,965 @@
+            html {
+              padding : 0;
+              margin : 0;
+            }
+
+            body {
+               text-align: left;
+              padding: 0;
+              margin : 0px ;
+              background-color : white;
+			  background-image:none;
+              font: 12px  Arial, Helvetica, sans-serif;
+              /* this sets default font-size of 1em = 10px */
+              /* for font size changes, style elements one time using ems */
+            }
+
+/* begin default styling of elements */
+
+            div {
+              margin : 0;
+              padding : 0;
+            }
+
+            p {
+              margin : 0px 0px 12px 0px;
+              padding : 0;
+            }
+           
+            span {
+              margin : 0;
+              padding : 0;
+            }
+
+            img {
+              border: none;
+              padding : 0;
+              margin : 0;
+              background-color : none;
+            }
+
+            a img {
+              border : none;
+            }
+
+
+            hr {
+              background: #c7d5f2;
+              border: 0;
+              color: #c7d5f2;
+              height: 1px;
+              margin: 0 0 10px 0;
+            }
+
+/* default lists, blockquotes, and tables and other specialized elements */
+
+/* font-sizes and line-heights below are common across entire document */
+/* for elements with font-sizes or line-heights that change during document, */
+/* remove font-size and line-height settings from here and style explicitly below */
+
+            ul {
+              margin : 0 0 12px 5px;
+              padding : 0 0 0 0px;
+
+              color : black;
+            }
+
+            li {
+              margin : 0 0 4px 5px;
+              padding : 0;
+            }
+
+            li ul {                             /* for lists inside lists */
+              margin-top : 5px;
+              margin-left : 15px;
+              list-style : disc;
+            }
+
+            blockquote {
+              border-top : 4px solid #c7d5f2;
+              margin: 0 0 12px 0;
+              padding: 10px 15px 10px 15px;
+              background: #e8e8e8;
+
+              line-height : 1.3em;
+              color : black !important;
+              }
+
+/* forms */
+
+            form {
+              padding : 0;
+              margin : 0;
+            }
+            /*
+            fieldset {
+              margin : 0;
+              padding : 0;
+              border : none;
+            }
+            */
+            fieldset{
+	            padding-bottom: 6px; 
+	            padding-left: 6px; 
+	            padding-right: 6px; 
+	            padding-top: 6px;
+            }
+
+           .label {
+              margin :  5px 0px 0px 5px;
+              padding : 0px 0px 0px 0px;
+            }
+
+            input {
+              margin : 0px 0px 0px 0px;
+              padding : 0;
+              vertical-align : middle;
+			  font-size : 1.2em;
+            }
+
+            input.button {
+              font-weight : bold;
+              color : #264da7;
+              font-size : 1.0em;
+              padding : 1px 3px 1px 3px;
+              vertical-align : top;
+             }
+
+            input.input-box {
+              vertical-align : middle;
+              padding : 1px;
+            }
+
+            .radio-button {
+              margin-right : 3px;
+              vertical-align : middle;
+            }
+		
+			
+ 			#oscontainer {
+			display : none;
+			 }
+			  	
+/* default table  */
+
+            table {
+              padding : 0px 0px 0px 0px;
+              margin : 0px 0px 0px 0px;
+              border-collapse : collapse;
+
+             }
+			.border2px{
+			 border : 2px solid #264DA7;
+			 }
+			 .border1px{
+			 border: 1px solid #264DA7;
+			 }
+			td { 			  
+			  padding : 1px 1px 1px 5px;
+			  
+			}
+			
+			th {
+			  border: 1px solid #fff;
+			  color : #fff;
+			  background-color: #264DA7;
+			  text-align : center;
+			}
+			.noborder{
+			  border : 0;
+			 }
+
+/* default headers */
+
+            h1, h2, h3, h4, h5, h6 {
+              margin : 0;
+              padding : 0;
+              margin-bottom : 5px;
+              color : black;
+              font-weight : bold;
+            }
+
+            /* font sizes here are global for the entire document; */
+            /* for headers that change size, remove here and size below in each container */
+
+	/*H1*/
+			h1 {
+			font-size: 1.6em;
+			display:inline;
+			}
+			h2 {
+			font-size: 1.6em;
+            font-weight : normal;
+			}
+			h3 {
+			font-size: 1.3em;
+			}
+			h4 {
+			font-size: 1.3em;
+            font-weight : normal;
+			}
+			
+            .underline {
+              border-bottom : 4px solid;
+              padding-bottom : 2px;
+            }
+            .datarow {
+              font-size : 85%;
+            }
+
+            .small {
+              font-size : 85%;
+              color : #666666;
+            }
+
+			/*.lblBreadCrumb
+			{
+			display: none;
+			}*/
+
+			#breadcrumb
+			{
+			display: none;
+			}
+
+
+/* default links */
+
+            a:link    { color: #264da7; text-decoration: underline; font-weight : normal; }
+            a:visited { color: #264da7; text-decoration: underline; font-weight : normal; }
+            a:hover   { color: #067ab4; text-decoration: underline; font-weight : normal; }
+            a:active  { color: #264da7; text-decoration: underline; font-weight : normal; }
+
+            a img     { border : 0; }
+			
+			
+/* Common Classes */
+
+			.imgleft {
+			float:left;
+			}
+			
+			.imgright {
+			float:right;
+			}
+			
+			.clear {
+			clear: both;
+			}
+			
+/* begin page layout */
+
+            #wrapper {
+              margin: 0 auto 0 auto;
+              padding : 0;
+              text-align: left;
+              width: 100%;
+
+            }
+			
+			
+/* header */
+
+			#header {
+			display: none;
+			}
+			.miniNav {
+			display: none;
+			}
+			
+			#orgnameprint {
+			padding: 0px 0px 10px 0px;			
+			}
+/* First Nav Tabs	*/		
+			.tabs {
+			display:none; 
+			visibility: hidden;
+			}
+/*Submenu */
+			#submenu {
+			display: none;
+			}
+/* Profiles Home Search ----------------------------------*/
+            #ProfHomeSearch {
+              border-top : 2px solid #264da7;
+			  margin: 0px auto;
+ 			  margin-bottom: 12px;
+              padding: 0px 15px;
+              background: #e7e7e7;
+  		   	  text-align : center;
+              color : black !important;
+			  }
+			 
+
+/* Template1 2 Column Layout ----------------------------------*/
+
+			#twocolumn {
+			margin: 0px 0 10px 0;
+			min-height: 400px;
+			width: 100%;
+			background-color:#fff;
+			background-image:url(/images/sidenav_bg.gif);
+			background-repeat:repeat-y;
+			background-position:left 0;
+			}
+	
+	/*  Left column*/
+
+			#leftCol {
+			display: none;
+			}
+	
+	/*right column	*/	
+			#rightCol {
+			}
+
+/*end template1 2 Column Layout-------------------------------------------*/
+
+
+/* Template2 1 Column Layout ----------------------------------*/
+
+			#onecolumn {
+			}/*added as fix for ie5 6/26*/
+			
+	/*White Content Box*/
+			#whitebox {}			
+			#whiteboxRight {}
+			#whiteboxLeft{
+			display : none;
+			}
+			
+/* Did You Know */
+			#didYouKnow {
+			display: none;
+			}
+
+/* Related links */
+			#relatedLinks {
+			display: none;
+			}			
+			
+/* footer */
+
+			#footer {
+			display: none;
+			}
+			
+/* utilbar */
+
+ 			#utilbar {
+			display : none;
+			 }
+
+			
+/* New Colors */
+
+		.c_264da7 {color: #264da7;}
+		.c_f7890c {color: #f7890c;}
+		.c_c7d5f2 {color: #c7d5f2;}
+		.c_067ab4 {color: #067ab4;}
+		
+		.bg_264da7 {background-color: #264da7;}
+		.bg_f7890c {background-color: #f7890c;}
+		.bg_c7d5f2 {background-color: #c7d5f2;}
+		.bg_067ab4 {background-color: #067ab4;}
+		
+/* START OLD DOE STYLE SHEET BELOW HERE. ALL NEW STYLES PLACE IN ABOVE CODE */
+
+		
+		/* TABLES */
+		CAPTION{
+			font-family: "verdana","arial","helvetica",sans-serif;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: left;
+		}
+		CAPTION.center{
+			font-family: "verdana","arial","helvetica",sans-serif;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+		}
+		.border004386
+		{
+		border: thin solid #004386
+		}
+		.border91A8CE{
+		border: thin solid #91A8CE
+		}
+		.borderccc{
+		border: thin solid #ccc
+		}.bordereee{
+		border: thin solid #eee
+		}
+		.border000{
+		border: thin solid #000
+		}
+		.borderall{
+		border:1px solid #eee;
+		border-collapse:collapse;
+		}
+		.borderall td{
+		border:1px solid #eee;
+		}
+		.borderall th{
+		border:1px solid #eee;
+		}
+		.paragraph-section{
+		border:1px solid #000;
+		}
+		.paragraph-section p{
+		margin:0px;
+		padding:0px;
+		}
+		TR{
+			text-align: left;
+			vertical-align: top;
+		}
+		TH{
+		 
+		  color:#000;
+		  background:#cccccc;
+		  border-spacing: 0px;
+		  border: none
+		}
+		TD{
+		  
+		  vertical-align: top;
+		  border-spacing: 0px
+		}
+		.nowrap{
+		  white-space: nowrap;
+		}
+		/* ALIGNMENT */
+		.center{
+		  text-align: center;
+		} 
+		.left{
+		  text-align: left;
+		} 
+		.right{
+		  text-align: right;
+		} 
+		.middle{
+		  vertical-align: middle;
+		} 
+		.bottom{
+		  vertical-align: bottom;
+		}
+		/* NEW FORM styling. Limited to profiles search pages.If applied to all form elements, integration with doeweb and with curent items such as header fastfinda nd orgselector dropdown will be difficult.*/
+		.searchscreen label
+		{
+		width: 10em;
+		float: left;
+		text-align: right;
+		margin-right: 0.5em;
+		display: block
+		}
+		.searchscreen input
+		{
+		color: #000;
+		background: #fee3ad;
+		border: 1px solid #264da7
+		}
+		.formactionbtn 
+		{
+		margin-left: 15em;
+		}
+		.formactionbtn input
+		{
+		color: #fff;
+		background: #264da7;
+		background-image:url(/images/submitbg.gif);
+		height: 20px;
+		margin-left: 1em;
+		margin-right: 1em;
+		} 
+		.formactionbtn input:hover
+		{
+		color: #000;
+		background: #c7d5f2;
+		text-decoration:underline;
+		background-image:url(/images/submitbg_hover.gif);
+		} 
+		.searchscreen .gradescheckbosx
+		{
+		width: 20em;
+		}
+		.searchscreen .gradescheckbosx input
+		{
+		display: block;
+		float: left;
+		background: #fee3ad;
+		border: 0px;
+		}
+		.searchscreen .gradescheckbosx label
+		{
+		width: 0em;
+		display: block;
+		margin-left: 0.4em;
+				margin-right: 0.4em;
+				padding-right: 1em;
+		margin-top: 0.1em;
+		float: left;
+		clear: right;
+		}
+		.searchscreen select
+		{
+		background: #fee3ad;
+		}
+		/*End New Form*/
+		/* FORMS */
+		.fastfind INPUT
+		{
+			BORDER:  1px solid;
+			FONT-WEIGHT: normal;
+			FONT-SIZE: 8pt;
+			COLOR: #000000;
+			font-family:"verdana","arial","helvetica",sans-serif;
+		}
+		.fastfind INPUT.go
+		{
+			BORDER:  0px solid;
+			FONT-WEIGHT: normal;
+			FONT-SIZE: 8pt;
+			COLOR: #000000;
+			font-family:"verdana","arial","helvetica",sans-serif;
+		}
+		INPUT.disabled
+		{
+		  font-family:"verdana","arial","helvetica",sans-serif;
+		  font-weight: bold;
+		  font-size: 9pt;
+		  color: white;
+		  background-color: #CCCCCC;
+		  border:2px solid;
+		  border-top-color:#91A8CE;
+		  border-left-color:#91A8CE;
+		  border-right-color:#B4C4DE;
+		  border-bottom-color:#B4C4DE;
+		  text-decoration:none;
+		}
+		TABLE.noborder INPUT
+		{
+		    border-top-style: none;
+		    border-right-style: none;
+		    border-left-style: none;
+		    border-bottom-style: none;
+		}
+		.submit{
+		  font-family:"verdana","arial","helvetica",sans-serif;
+		  font-weight: bold;
+		  font-size: 9pt;
+		  color: white;
+		  background-color: #004386;
+		  border:2px solid;
+		  border-top-color:#91A8CE;
+		  border-left-color:#91A8CE;
+		  border-right-color:#B4C4DE;
+		  border-bottom-color:#B4C4DE;
+		  text-decoration:none;
+		  }
+		.submit:active {
+		  background-color: #E9BB80;
+		  text-decoration:none;
+		 }
+		.submit:focus {
+		background-color: #E9BB80;
+		text-decoration:none;
+		}
+		FIELDSET{
+			padding-bottom: 6px; 
+			padding-left: 6px; 
+			padding-right: 6px; 
+			padding-top: 6px;
+		}
+		TEXTAREA
+		{
+		    BORDER-RIGHT: #003366 1px solid;
+		    BORDER-TOP: #003366 1px solid;
+			BORDER-BOTTOM: 1px solid;
+			BORDER-LEFT: 1px solid;
+		    FONT-WEIGHT: normal;
+		    FONT-SIZE: 8pt;
+		    COLOR: #000000;
+		    font-family:"verdana","arial","helvetica",sans-serif;
+		    BACKGROUND-COLOR: #ffffff
+		}
+		SELECT
+		{
+		    BORDER-RIGHT: #003366 1px solid;
+		    BORDER-TOP: #003366 1px solid;
+			BORDER-LEFT: 1px solid;
+			BORDER-BOTTOM: 1px solid; 
+		    FONT-WEIGHT: normal;
+		    FONT-SIZE: 12px;
+		    COLOR: #000000;
+		    font-family:"verdana","arial","helvetica",sans-serif;
+		    BACKGROUND-COLOR: #ffffff
+		}
+		SELECT.ten
+		{
+		    BORDER-RIGHT: #003366 1px solid;
+		    BORDER-TOP: #003366 1px solid;
+			BORDER-LEFT: 1px solid;
+			BORDER-BOTTOM: 1px solid; 
+		    FONT-WEIGHT: normal;
+		    FONT-SIZE: 10px;
+		    COLOR: #000000;
+		    font-family:"verdana","arial","helvetica",sans-serif;
+		    BACKGROUND-COLOR: #ffffff
+		}
+		/* LISTS */
+		OL.ii { 
+		list-style-type: upper-roman; 
+		}
+		
+		OL.aa { 
+		list-style-type: upper-alpha; 
+		}
+		
+		OL.a { 
+		list-style-type: lower-alpha; 
+		}
+		
+		OL.i { 
+		list-style-type: lower-roman; 
+		}
+		/* LINKS */
+		.noline{
+		  text-decoration:none;
+		}
+		A.noline:hover{
+		  text-decoration:underline;
+		}
+		A.bold:link{
+		  text-decoration:none;
+		  font-weight: bold;
+		}
+		A.bold:hover{
+		  text-decoration:underline;
+  		  font-weight: bold;
+		}
+		A.bold:visited{
+		  text-decoration:none;
+  		  font-weight: bold;
+		}
+		A.nav:link{
+		  text-decoration:none;
+		}
+		A.nav:hover{
+		  text-decoration:underline;
+		}
+		A.nav:visited{
+		  text-decoration:none;
+		}
+		A.blk_under:link{
+		  color:#000;
+		  text-decoration:underline;
+		}
+		A.blk_under:visited{
+		  color:#000;
+		  text-decoration:underline;
+		}
+		A.blk_under:active{
+		  color:#9CF;
+		  text-decoration:underline;  
+		}
+		A.blk_under:hover{
+		  color:#9CF; 
+		  text-decoration:underline;
+		}
+		A.wht:link{
+		  color:#FFF;
+		  text-decoration:none;
+		}
+		A.wht:visited{
+		  color:#FFF;
+		  text-decoration:none;
+		}
+		A.wht:active{
+		  color:#9CF;
+		  text-decoration:underline;  
+		}
+		A.wht:hover{
+		  color:#9CF; 
+		  text-decoration:underline;
+		}
+		A.wht_under:link{
+		  color:#FFF;
+		  text-decoration:underline;
+		}
+		A.wht_under:visited{
+		  color:#FFF;
+		  text-decoration:underline;
+		}
+		A.wht_under:active{
+		  color:#9CF;
+		  text-decoration:underline;  
+		}
+		A.wht_under:hover{
+		  color:#9CF; 
+		  text-decoration:underline;
+		}
+		A.blu:active{
+		  color:#004386; 
+		  text-decoration:underline;   
+		}
+		A.blu:visited{
+		  color:#004386; 
+		  text-decoration:underline;   
+		}
+		A.blu:link{
+		  color:#004386; 
+		  text-decoration:underline;     
+		}
+		A.blu:hover{
+		  color:#E28521; 
+		  text-decoration:underline;         
+		}
+		A.bluw:active{
+		  color:#004386; 
+		  text-decoration:underline;   
+		}
+		A.bluw:visited{
+		  color:#004386; 
+		  text-decoration:none;   
+		}
+		A.bluw:link{
+		  color:#004386; 
+		  text-decoration:none;     
+		}
+		A.bluw:hover{
+		  color:#FFFFFF; 
+		  text-decoration:underline;         
+		}
+		A.orn:active{
+		  color:#E28521; 
+		  text-decoration:underline;   
+		}
+		A.orn:visited{
+		  color:#E28521; 
+		  text-decoration:none;   
+		}
+		A.orn:link{
+		  color:#E28521; 
+		  text-decoration:none;     
+		}
+		A.orn:hover{
+		  color:#004386; 
+		  text-decoration:underline;         
+		} 
+		a[title ="External Link"] { 
+			padding-right: 1.3em;
+			background: url(http://www.doe.mass.edu/images/icon_external.gif) no-repeat center right;
+			text-decoration: none;  
+			border-bottom: 1px dotted
+		}
+		
+		/* TEXT SIZES, STYLES & WEIGHTS */
+		
+		.searchindent{
+			padding-left: 20px;
+		}
+		.newblu{
+			color:#99CCFF;
+		}
+		.newblubg{
+			background:#c7d5f2;
+		}
+		.nav{
+		  font: 62.5%  Arial, Helvetica, sans-serif;
+		  font-size:1.0em;
+		  font-weight:normal; 
+		}
+		.headlist{
+		  font-size:1.3em;
+		  font-weight:bold;
+		}
+		.lg{
+		  font-size:1.2em;
+		  font-weight:bold;
+		}
+		.footer{
+		  font-size:.9em;
+		}
+		.med{
+		  font-size:1.1em;
+		}
+		.head{
+		  font-size:1.3em;
+		}
+		.list{
+		  font-size:1.1em;
+		} 
+		.p{
+		  font-size:small;
+		}
+		.quote{
+		  color:white;
+		}
+		
+		.linethru { 
+		  text-decoration: line-through;
+		 }
+		.bold{
+		  font-weight: bold;
+		}
+		
+		.em{
+		  font-style:italic;
+		}
+		.norm{
+		  font-weight:normal;
+		}
+		.section{
+		
+		  font-size:1.2em;
+		  font-weight:bold;
+		  color:#004386;
+		}
+		.note{
+		  font-family:"georgia","palatino","times","times new roman",serif;
+		  font-size:1em;
+		  font-style:italic;
+		}
+		
+		.sup {
+		vertical-align:super; 
+		font-size: smaller;
+		}
+		
+		.sub {
+		vertical-align:sub;
+		font-size: smaller;
+		}
+		
+		.excelText { 
+		mso-number-format:\@;
+		 }
+		
+		.inline {
+			display: inline;
+			}
+			
+		.margin40 {
+			margin-left: 40px;
+		}
+		
+		/* COLORS */
+		.blk{
+		  color:#000;
+		  text-decoration:none;
+		}
+		.blu2{
+		  color:#91A8CE; 
+		}
+		.blu{
+		  color:#004386; 
+		}
+		.wht{
+		  color:#FFF;
+		  text-decoration:none;
+		}
+		.orn{
+		  color:#E28521; 
+		}
+		.ltbl{
+		  color:#99CCFF;
+		}
+		.medbl{
+		  color:#9999CC;
+		}
+		.gry{
+		  color:#CCCCCC;
+		}
+		.red{
+		  color:#FF0000;
+		}
+		.grn {
+			color:#33CC66;
+		}
+		
+		.dkgrn {
+			color:#006600;
+		}
+		
+		
+		/*BACKGROUND COLORS */
+		
+		.eee { 
+		  background-color: #EEEEEE;
+		}
+		.ccc {
+		  background-color: #CCCCCC;
+		}
+		.fff {
+		  background-color: #FFFFFF;
+		}
+		.bg000 {
+		  background-color: #000000;
+		}
+		.e7e7 {
+		  background-color: #E7E7E7;
+		}
+		.bg004386 { /*darkest blue*/
+		  background-color: #004386;
+		}
+		.bg506EAC {
+		background-color: #506EAC; /*dark blue*/
+		}
+		.bg91A8CE { /*medium blue*/
+		  background-color: #91A8CE;
+		}
+		.bgB4C4DE {
+		background-color: #B4C4DE; /*light blue*/
+		}  
+		.bge2eaf6 {
+		  background-color: #E2EAF6; /*lightest blue*/
+		}
+		.bgE9BB80 {
+		background-color: #E9BB80; /*orange*/
+		}
+		.bge9bb80 {
+		background-color: #E9BB80; /*orange*/
+		}
+
+		.bgFBD9B5 {
+		background-color: #FBD9B5;/*light orange*/
+		}
+		.bgfbd9b5 {
+		background-color: #FBD9B5;/*light orange*/
+		}
+		.bghatch1 {
+		background: url(/images/yellow_green_forward_diagonal_thin.gif) repeat;
+		}
+		.bghatch2 {
+		background: url(/images/black_forward_diagonal_thin.gif) repeat;
+		}
+		.bgdots1 {
+		background: url(/images/dots7.gif) repeat;
+		}
+		
+		/* DIV positioning */
+		#edName { 
+			 position: absolute;
+			 left: 125px;
+			 top: 450px;
+			 width: 150px;
+			 font-size: 11px
+		}
+		
+		/*report card overview*/
+
+		.school
+		{
+		background-color:#506EAC;
+		text-align:right;
+		color:#FFFFFF;
+		}
+		.district-state
+		{
+		background-color:#B4C4DE;
+		text-align:right; 
+		color:#000000;
+		}

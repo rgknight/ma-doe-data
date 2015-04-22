@@ -1,0 +1,111 @@
+/* Profiles Home Search ----------------------------------*/
+
+#ProfHomeSearch {
+	border-top : 2px solid #264da7;
+	margin: 0px auto;
+	margin-bottom: 12px;
+	padding: 0px 15px;
+	background: #e7e7e7;
+	text-align : center;
+	color : black !important;
+}
+#reportFinder {
+	float:left;
+	margin: 10px;
+}
+/* Template1 3 Column Layout ----------------------------------*/
+
+
+
+#threecolumn {
+	width: 100%;
+	background-color:#ffffff;
+	margin-bottom: 20px;
+}
+/*    Main col */
+
+#MainCol {
+	font-size: 1.2em;
+	margin-left: 270px;
+	min-height: 100px;
+}
+/*  Left column*/
+
+#leftColHome {
+	height: 100%;
+	width:260px;
+	float: left;
+}
+/*  Right col */
+
+#rightColTable {
+	width: 240px;
+	background:url(/images/sidenavRight_bg.gif);
+	background-repeat:repeat-y;
+	padding: 0;
+	margin: 0;
+}
+#rightColHome {
+margin: 12px; /*reduced from 15 to 12 to allow room for statewide report names*/
+height: 400px; /*Added 9/15 to bring content box all the way down to footer when no content is present */
+}
+
+#rightNavTitle {
+font-weight: bold;
+margin-left: 10px;
+font-size: 1.0em;
+}
+
+#rightColHome ul.rightnav {
+	list-style-type: decimal;
+	margin: 0px;
+	padding: 0px;
+	margin: 0 5px 0 20px;
+}
+#rightColHome ul.rightnav li {
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+}
+#rightColHome ul.rightnav li a {
+	color: #001f6a;
+	font-size: .9em;
+	font-weight:normal;
+}
+
+#rightColHome ul.rightnav li a:link 	{color: #264da7;text-decoration: none;}
+#rightColHome ul.rightnav li a:visited 	{color: #264da7;text-decoration: none;}
+#rightColHome ul.rightnav li a:hover 	{color: #f7890c;text-decoration: underline;}
+#rightColHome ul.rightnav li a:active 	{color: #264da7;text-decoration: none;}
+/*end template1 3 Column Layout-------------------------------------------*/
+
+
+
+
+
+/* Profiles Home Right Block */
+
+#relatedLinksHome {
+	background-color: #ffffff;
+	border: 1px solid #264da7;
+	padding: 5px;
+	color: #000;
+	font-size: 1.0em;
+	font-weight: normal;
+	margin: 50px 5px 15px 10px;
+}
+#relatedLinksHome ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+#relatedLinksHome li a{
+	background-image: url(/images/rbullet.gif);
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+	font-size:1.0em;
+}
+#relatedLinksHome ul li a:link 		{color: #264da7;text-decoration: none;}
+#relatedLinksHome ul li a:visited 	{color: #264da7;text-decoration: none;}
+#relatedLinksHome ul li a:hover 	{color: #067ab4;text-decoration: underline;}
+#relatedLinksHome ul li a:active 	{color: #264da7;text-decoration: none;}

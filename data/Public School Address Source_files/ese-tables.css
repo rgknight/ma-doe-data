@@ -1,0 +1,262 @@
+/* Profiles Data Tables Stylesheet 9/30/08 SMG ----------------------------------*/
+
+/* notes...
+
+THE TABLE: (specific to data screens as with inside whitebox or onecolumn on profiles. Must not be dictated by it's parent however, because may be used elsewhere in other page templates.
+default left align table
+no default widths, but defined inline with some standards (300, 500, 650, or default flow if over that?)
+text to float to next line under table by default, but Include a style to apply to make text float right and wrap around table.
+no individual cell borders due to compatibility. to acheive, still use embedded second table
+default 2px outter border for table (a blue)
+default 1px inner borders (a grey or sorts)
+Option necessary for naked/blank table- no bgcolors or borders. alignments against standard lefts to show realtionships
+
+HEADER:
+left align
+bold
+bgcolor (border bgcolor may have to change for THs so it is readable)
+psudeo class setup for filters
+repeat2 additional levels of th-type-tr appearances- bold w diff bgs
+bgimage with gradient feel?
+
+ROW
+alternating bg style necessary. Should be able to be applied to cell level also
+
+CELL
+default left align cells
+bg assigned white bu default? but can't overide th alternate bg!
+
+CONTENT
+a default and one other (smaller) content setup (p, li, a, td default, etc)
+defined height for rows (devr should know for imline images/icons)
+a bold alternative should exist for unique instances
+
+BORDERS:
+no individual cell borders due to compatibility. to acheive, still use embedded second table
+default 2px outter border for table (a blue)
+default 1px inner borders (a grey or sorts)
+
+Captions?
+
+
+*/
+
+/* default table  */
+
+	table {
+	border-collapse: collapse;
+	border: 0px;
+	padding : 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+	}
+	
+	th { 
+	text-align: left; 
+	font-weight: bold;
+	color:#000;
+	background:#cccccc;
+	padding : 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+	}
+	
+	td {
+	vertical-align: top;
+	text-align: left;	
+	padding : 0px 0px 0px 0px;
+    margin : 0px 0px 0px 0px;
+	}
+	
+	tr {
+	text-align: left;
+	vertical-align: top;
+	}
+		  
+/* TABLE CLEAR:  Suitable for simple display of elements without table indicators which require alignment and relationship denotion by row, such as 2-column contact info or similar. */
+
+	.t_clear {
+	border: 0px;
+	background-color: none;
+	margin: 1em;
+	}
+
+	.t_clear th {
+	border-bottom: 2px dotted #264da7;
+	background-color: transparent;
+	}
+	.t_clear td {
+	border: 0px;
+	background-color: transparent;
+	}
+	
+/* TABLE DETAIL: for tables with or without complex multi-row-column relationships or the need for multiple levels of headings to support tha data */ 
+
+	.t_detail {
+	border: 2px solid #264da7;
+	margin: 1em;
+	}
+	.t_detail th {
+	border: 1px solid #CCCCCC;
+	background-color: #264da7;
+	padding : 2px;
+	color: #ffffff;
+	}
+	.t_detail th a {
+	color: #ffffff;
+	font-weight: bold;
+	}
+	.t_detail th a:hover, .t_detail th a:active {
+	color: #8e9ec1;
+	}
+	.t_detail td {
+	border: 1px solid #CCC;
+	background-color: #fff;
+	padding : 2px;
+	}
+
+
+/* TABLE PARAMETERS: for Application as needed for effect */
+
+	.altrow td {
+	background-color: #E8E8E8;
+	}
+	
+/* gray table headers */
+	th.t_g1, td.t_g1 {
+	background: #000000;
+	}
+	th.t_g2, td.t_g2 {
+	background: #646464;
+	}
+	th.t_g3, td.t_g3 {
+	background: #A9A9A9;
+	}	
+/* orange table headers */
+	th.t_o1, td.t_o1 {
+	background: #e28521;
+	color: #000;
+	}
+	th.t_o2, td.t_o2 {
+	background: #E9BB80;
+	color: #000;
+	}
+	th.t_o3, td.t_o3 {
+	background: #FBD9B5;
+	color: #000;
+	}
+/* blue table headers */
+	th.t_b1, td.t_b1 {
+	background: #264da7;
+	}
+	th.t_b2, td.t_b2 {
+	background: #526ba6;
+	}
+	th.t_b3, td.t_b3 {
+	background: #8e9ec1;
+	}	
+	/*adjustments for tds/ths that have header styles applied or active link contrast issues*/
+	td.t_g1, td.t_g2, td.t_b1, td.t_b2, td.t_g1 a, td.t_g2 a, td.t_b1 a, td.t_b2 a {color: #fff;}
+	th.t_o1 a, th.t_o2 a, th.t_o3 a {color: #000}
+	th.t_g3 a:hover, th.t_o1 a:hover, th.t_b3 a:hover {color: #067AB4}
+	td.t_b1 a:hover, td.t_b2 a:hover, td.t_g1 a:hover, td.t_g2 a:hover {color: #8e9ec1}
+/*	
+nowrap
+center
+floatwrap text
+bold
+theader1
+theader2
+*/
+	
+			 .pdata td{
+			  border-width: 4px;
+			  border-color: black;
+			  background-color: #c7d5f2;
+    		 }
+			.border2px{
+			 border : 2px solid #264DA7;
+			 }
+			 .border1px{
+			 border: 1px solid #264DA7;
+			 }
+			ytd { 			  
+			  padding : 1px 1px 1px 5px;
+			  
+			}
+			
+			yth {
+			  border: 1px solid #fff;
+			  color : #fff;
+			  background-color: #264DA7;
+			  text-align : center;
+			}
+			.noborder{
+			  border : 0;
+			 }
+
+CAPTION{
+		    vertical-align: bottom;
+			font-family: "verdana","arial","helvetica",sans-serif;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: left;
+		}
+		CAPTION.center{
+			font-family: "verdana","arial","helvetica",sans-serif;
+			font-size: 1.2em;
+			font-weight: bold;
+			text-align: center;
+		}
+		.border004386
+		{
+		border: thin solid #004386
+		}
+		.border91A8CE{
+		border: thin solid #91A8CE
+		}
+		.borderccc{
+		border: thin solid #ccc
+		}.bordereee{
+		border: thin solid #eee
+		}
+		.border000{
+		border: thin solid #000
+		}
+		.borderall{
+		border:1px solid #eee;
+		border-collapse:collapse;
+		}
+		.borderall td{
+		border:1px solid #eee;
+		}
+		.borderall th{
+		border:1px solid #eee;
+		}
+		.paragraph-section{
+		border:1px solid #000;
+		}
+		.paragraph-section p{
+		margin:0px;
+		padding:0px;
+		}
+
+		.nowrap{
+		  white-space: nowrap;
+		}
+#relatedLinksHome ul li a:link 		{color: #264da7;text-decoration: none;}
+#relatedLinksHome ul li a:visited 	{color: #264da7;text-decoration: none;}
+#relatedLinksHome ul li a:hover 	{color: #067ab4;text-decoration: underline;}
+#relatedLinksHome ul li a:active 	{color: #264da7;text-decoration: none;}
+
+			
+			
+/* New Colors */
+
+		.c_264da7 {color: #264da7;} /* blue bgs */
+		.c_f7890c {color: #f7890c;} /* Orange1 */
+		.c_c7d5f2 {color: #c7d5f2;} /* light blue */
+		.c_067ab4 {color: #067ab4;} /* Active link blue */
+		.c_001F6A {color: #001F6A;} /* Normal link blue */
+		.bg_264da7 {background-color: #264da7;}
+		.bg_f7890c {background-color: #f7890c;}
+		.bg_c7d5f2 {background-color: #c7d5f2;}
+		.bg_067ab4 {background-color: #067ab4;}

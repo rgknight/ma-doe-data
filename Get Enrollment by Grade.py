@@ -5,7 +5,7 @@ import csv
 
 os.chdir('C:/Users/rknight/Documents/GitHub/ma-doe-data')
 
-modes = ['district', 'school']
+modes = ['school']
 years = list(range(1996, 2015+1))
 
 for mode in modes:

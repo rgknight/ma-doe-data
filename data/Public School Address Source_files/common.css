@@ -1,0 +1,1159 @@
+@import "/css/ajax.css";
+
+/* page and body settings reminder: margin: top right bottom left... or margin: (top bottom) (left right)*/
+
+html{
+padding : 0;
+margin : 0;
+}
+
+body{
+text-align: left;
+padding: 0;
+margin : 20px 30px 20px 30px;
+background-color : white;
+background-image:url(/images/body_bg.gif);
+background-position: left 1px;
+font: 62.5%  Arial, Helvetica, sans-serif;
+}
+
+div{
+margin : 0;
+padding : 0;
+}
+
+p{
+margin : 0px 0px 12px 0px;
+padding : 0;
+}
+
+span{
+margin : 0;
+padding : 0;
+}
+
+img{
+border: none;
+padding : 0;
+margin : 0;
+background-color : none;
+}
+
+a img{
+border : none;
+}
+
+hr{
+background: #c7d5f2;
+border: 0;
+color: #c7d5f2;
+height: 1px;
+margin: 0 0 10px 0;
+}
+
+/* default lists, blockquotes, and tables and other specialized elements */
+/* font-sizes and line-heights below are common across entire document */
+/* for elements with font-sizes or line-heights that change during document, */
+/* remove font-size and line-height settings from here and style explicitly below */
+
+ul{
+margin : 0 0 10px 15px;
+padding : 0 0 0 0px;
+color : black;
+}
+
+li{
+margin : 0 0 4px 5px;
+padding : 0;
+}
+
+li ul{                             /* for lists inside lists */
+margin: 5px 0 0 15px;
+list-style : disc;
+}
+
+blockquote{
+border-top : 4px solid #c7d5f2;
+margin: 0 0 12px 0;
+padding: 10px 15px 10px 15px;
+background: #e8e8e8;
+line-height : 1.3em;
+color : black !important;
+}
+
+form{
+padding : 0;
+margin : 0;
+}
+
+fieldset{
+padding: 6px;
+}
+
+.label{
+margin :  5px 0px 0px 5px;
+padding : 0px 0px 0px 0px;
+}
+
+input{
+margin: 0;
+padding: 0;
+vertical-align: middle;
+font-size : 1.2em;
+}
+
+input.button {
+font-weight: bold;
+color: #264da7;
+font-size: 1.0em;
+padding: 1px 3px 1px 3px;
+vertical-align: top;
+}
+
+input.input-box {
+vertical-align : middle;
+padding : 1px;
+}
+
+.radio-button {
+margin-right: 3px;
+vertical-align: middle;
+}
+
+/* inner Profiles h1 and orgselector */			
+#crumb_selector_box{
+margin : 0px 0px 0px 0px;
+padding : 0px 0px 0px 0px;
+background-color:#c7d5f2;
+background-image: none;
+width: 100%;	/*added as fix for ie5 6/26*/
+width: auto;/*added as fix for ie5 6/26*/
+}
+.crumb_header { /*container for h1 and related string on innerpages of profiles in breadcrumb format */
+float: left;
+}
+/* OrgSelector Rollovers	*/	
+#oscontainer{
+margin : 0px 0px 0px 0px;
+padding : 0px 0px 0px 0px;
+position : relative;
+width : 400px;
+float: right;
+}
+
+.osdropdown{
+margin : 0px 0px 0px 0px;
+padding : 0px 0px 0px 0px;
+vertical-align : top;
+font-size : 1.0em;
+}
+
+#orgselector2{
+font-size: 1.1em;
+}
+
+#orgselector2 span{ 			/*Selected Tab style for nonlink*/
+vertical-align : top;
+background:url(/images/os_radios.gif) no-repeat left top;
+padding: 0px 14px 0px 14px;
+background-position:0 -40px; /*Shift background image up to start of 3nd  image (checked)*/
+display : inline;
+}
+
+#orgselector2 a:hover {			/*onMouseover style for link*/
+background-position:0% -20px; /*Shift background image up to start hover image (filled)*/
+text-decoration:underline;
+color: #f78a0c;	
+}
+
+#orgselector2 a{
+vertical-align : top;
+background:url(/images/os_radios.gif) no-repeat left top;
+padding: 0px 4px 0px 14px;
+text-decoration:none;
+color: #264DA7;
+}
+/* default table  */
+
+table {
+padding : 0px;
+margin : 0px;
+border-collapse : collapse;
+}
+
+.border2px{
+border : 2px solid #264DA7;
+}
+
+.border1px{
+/*border: 1px solid #264DA7;*/
+border: 1px solid #000000 ;
+}
+
+td { 			  
+padding : 1px 1px 1px 5px;
+}
+
+th {
+border: 1px solid #fff;
+color : #fff;
+background-color: #264DA7;
+text-align : center;
+}
+.noborder{
+border : 0;
+}
+
+/* default headers */
+
+h1, h2, h3, h4, h5, h6 {
+margin : 0 0 5px 0;
+padding : 0;
+color : black;
+font-weight : bold;
+}
+/* font sizes here are global for the entire document; */
+/* for headers that change size, remove here and size below in each container */
+h1 {
+font-size: 1.6em;
+display:inline;
+}
+h2 {
+font-size: 1.5em;
+font-weight : normal;
+}
+h3 {
+font-size: 1.4em;
+font-weight : normal;
+}
+h4 {
+font-size: 1.3em;
+font-weight : normal;
+}
+
+.underline {
+border-bottom : 4px solid;
+padding-bottom : 2px;
+}
+.datarow {
+font-size : 85%;
+}
+
+.small {
+font-size : 85%;
+color : #666666;
+}
+
+.crumb {
+padding : 0px 8px;
+}
+
+#breadcrumb{
+font-size: 1.1em;
+max-width: 500px;
+float:left;
+}
+
+a:link    { color: #264da7; text-decoration: underline; font-weight : normal; }
+a:visited { color: #264da7; text-decoration: underline; font-weight : normal; }
+a:hover   { color: #067ab4; text-decoration: underline; font-weight : normal; }
+a:active  { color: #264da7; text-decoration: underline; font-weight : normal; }
+a img     { border : 0; }
+
+/* Common Classes */
+.imgleft {
+float:left;
+}
+
+.imgright {
+float:right;
+}
+
+.clear {
+clear: both;
+}
+
+/* begin page layout */
+#wrapper {
+margin: 0 auto;
+padding : 0;
+text-align: left;
+width: 100%;
+min-width: 950px;
+}
+
+/*	For IE 6 min width fix*/
+*HTML #innerWrapper {
+Z-INDEX: 1; 
+FLOAT: left; 
+border-left:950px solid #FFFFFF; 
+POSITION: relative;
+BACKGROUND-COLOR: #c7d5f2;
+}
+
+*HTML #innerWrapper .innerContent {
+Z-INDEX: 2; 
+FLOAT: left; 
+margin-left:-950px;
+POSITION: relative;
+/*background-image:url(/images/body_bg.gif);*/
+}
+/* header */
+#header {
+background-image:url(/images/header_bg.jpg);
+height: 55px;
+position:relative;			
+}
+
+#headerprint {
+display: none;			
+}
+
+#orgnameprint {
+display: none;			
+}
+
+.miniNav {
+color: #001f6a;
+width: 400px;
+font-size: 1.1em;
+position:absolute;
+top: 10px;
+right: 140px;
+font-weight:bold;
+text-align:right;
+}
+
+.miniNav li {
+display: inline;
+margin:0 0 0 12px;
+}
+
+.miniNav li a:link    { color: #001f6a; text-decoration: none; font-weight : bold; }
+.miniNav li a:visited { color: #001f6a; text-decoration: none; font-weight : bold; }
+.miniNav li a:hover   { color: #003366; text-decoration: underline; font-weight : bold; }
+.miniNav li a:active  { color: #001f6a; text-decoration: none; font-weight : bold; }
+
+/* First Nav Tabs	*/		
+.tabs{
+background-image:url(/images/body_bg.gif);
+padding: 15px 0 0 0;
+float:left;
+width:100%;
+font-size:1.1em;
+line-height:normal;
+border-bottom: 1px solid #264da7; /*Add border strip to bottom of menu*/
+}
+
+.tabs ul{
+list-style-type: none;
+margin:0 0 0 5px; /*Left offset of entire tab menu relative to page*/
+padding:0;
+}
+
+.tabs li{
+display:inline;
+margin:0;
+padding:0;
+}
+
+.tabs a{
+float:left;
+background:url(/images/n1alV2.gif) no-repeat left top;
+margin:0;
+padding:0 0 0 12px;
+text-decoration:none !important;
+}
+
+.tabs a span{
+float:left;
+display:block;
+background:url(/images/n1arV2.gif) no-repeat right top;
+padding: 6px 14px 3px 3px;
+font-weight:bold;
+color:#2b55b2;
+text-decoration:none !important;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+.tabs a span {float:none;}
+/* End IE5-Mac hack */
+
+.tabs a:hover span {
+color: #ffffff;
+text-decoration:none;
+}
+
+.current a{ /*Selected Tab style*/
+background-position:0 -82px; /*Shift background image up to start of 2nd tab image*/
+text-decoration:none;
+}
+.current a span{ /*Selected Tab style*/
+background-position:100% -82px; /*Shift background image up to start of 2nd tab image*/
+color: #ffffff;
+text-decoration:none;
+}
+.tabs a:hover{ /*onMouseover style*/
+background-position:0% -164px; /*Shift background image up to start of 2nd tab image*/
+text-decoration:none;
+}
+.tabs a:hover span{ /*onMouseover style*/
+background-position:100% -164px; /*Shift background image up to start of 2nd tab image*/
+text-decoration:none;
+}
+.tabs a:visited {
+text-decoration:none;
+}
+.tabs a:active {
+text-decoration:none;
+}
+/*Submenu */
+#submenu {
+background-color: #264da7;
+height: 30px;
+width: 100%;
+text-align:left;
+background:url(/images/submenu_bg.gif) repeat-x;
+}
+#submenu ul{
+list-style-type: none;
+margin: 8px 0 0 80px;
+font-size: 1.1em;
+float:left;
+}
+#submenu ul li{
+display: inline;
+margin-right: 40px;
+color: #ffffff;
+font-weight : bold;
+white-space:nowrap;
+}
+#submenu ul li a {
+color: #ffffff;
+font-weight : bold;
+text-decoration: none;
+}
+#submenu ul li a:hover{
+font-weight : bold;
+text-decoration: underline;
+}
+#submenu #search {
+float:left;
+margin-top: 5px;
+padding-left: 80px;
+}
+/* Profiles Home Search ----------------------------------*/
+#ProfHomeSearch {
+border-top : 2px solid #264da7;
+margin: 0px auto 12px auto;
+padding: 0px 15px;
+background: #e7e7e7;
+text-align : center;
+color : black !important;
+}
+/* Template1 2 Column Layout ----------------------------------*/
+#twocolumn {
+margin: 0 0 10px 0;
+min-height: 400px;
+width: 100%;
+background:#fff url(/images/sidenav_bg.gif) repeat-y;
+background-position:left 0;
+}
+/*  Left column*/
+#leftCol {
+height: 100%;
+width:200px;
+padding: 10px 10px 20px 10px;
+float: left;
+}
+#leftCol ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+#leftCol ul.leftNav{
+padding: 20px 10px 20px 10px;
+}
+
+#leftCol .leftNav li{
+padding: 0;
+margin: 5px 0 0 0;
+}
+#leftCol .leftNav li li{
+margin-left: 15px;
+}
+#leftCol .leftNav li li li{
+margin-left: 15px;
+}
+#leftCol .leftNav li a{
+color: #001f6a;
+font-weight:bold;
+padding-left: 10px;
+list-style-type: none;
+background: url(/images/orangerightarrowsm.gif) no-repeat;
+background-position: left 4px;
+}
+/*  I can't get this working the same in ie 7 and firefox... 
+havent tested ie5. What we need is for every level of li and inner li, 
+a leftcurrent class where items are a different bold class, with different image...
+as a visual queue to users When on selected page. either in an a or not. */
+
+#leftCol .leftNav li li a{
+background-image: none;
+font-weight: bold;
+}
+#leftCol .leftNav li li li a{
+background-image: none;
+font-weight: normal;
+}
+
+#leftCol .leftNav li a:link 	{color: #264da7;text-decoration: none;}
+#leftCol .leftNav li a:visited	{color: #264da7;text-decoration: none;}
+#leftCol .leftNav li a:hover 	{color: #f7890c;text-decoration: underline;}
+#leftCol .leftNav li a:active 	{color: #264da7;text-decoration: none;}
+
+/*right column	*/	
+#rightCol {
+margin-left: 220px;
+padding: 20px;
+font-size: 1.2em;
+}
+/*end template1 2 Column Layout-------------------------------------------*/
+
+
+/* Template2 1 Column Layout ----------------------------------*/
+
+#onecolumn {
+margin: 0 0 10px 0;
+min-height: 400px;
+background-color:#c7d5f2;
+background-image: none;
+padding: 5px 15px 15px 15px; /*changed top padding to save vert space above crumbs*/
+width: 100%;	/*added as fix for ie5 6/26*/
+w\idth: auto;}/*added as fix for ie5 6/26*/
+/*Adjust tabs*/
+#onecolumn .tabs {
+background-image: none;
+font-size:1.1em;
+padding: 10px 0px 0px 0px;
+border: none;
+}
+#onecolumn .tabs ul{
+margin: 0px 0px 0px 240px;
+width: 800px;
+}
+#onecolumn .tabs a span{
+padding: 3px 12px 3px 3px;
+}
+/*Year Toggle (it's inside Tabs)*/
+#yeartoggle {
+font-size:1.1em;
+font-weight:bold;
+width: 300px;
+margin: 0px 0px -20px 60px;
+}
+a#YTleft {			
+width: 16px;
+height: 15px;
+background-image: url(/images/yeartogglebgl.gif);
+background-position: 0 0;
+margin: 0 auto;
+display: block;
+float: left;
+}
+a#YTleft:hover {
+background-position: 0 -16px;
+background-image: url(/images/yeartogglebgl.gif);
+}
+a#YTright {
+
+width: 16px;
+height: 15px;
+background-image: url(/images/yeartogglebgr.gif);
+background-position: 0 0;
+margin: 0 auto 0 13px;
+display: block;
+float: left;
+}
+a#YTright:hover {
+background-position: 0 -16px;
+}
+a#YTright .alt, a#YTleft .alt { display: none; }
+
+/*White Content Box*/
+#whitebox {
+background-color: #ffffff;
+border: 1px solid #264da7;
+padding: 10px;
+min-height: 300px;
+font-size: 12px;
+}
+
+/* commented out this ie fix because it was actually causing probems in dev. seems ok without it in ie507
+html #whitebox {
+position: relative;
+top: -5px;
+}*/
+
+#whiteboxRight {
+/* comment for fix table overflow on 9/15, because we added a table. margin-left: 220px;*/
+/*font-size: 1.2em;*/
+}
+
+#whiteboxLeft{
+width:210px;
+float: left;
+position:relative;
+font-size: 11px;
+}
+
+#whiteboxLeft ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+font-size: 11px;
+position:relative;
+}
+#whiteboxLeft .leftNav li{
+padding: 0px;
+margin: 5px 0px 0px 0px;	
+font-size: 11px;	
+/*font-size: 1.1em;*/
+}
+
+#whiteboxLeft .leftNav li li{
+margin: 5px 0px 0px 10px;
+}
+
+#whiteboxLeft .leftNav li li li{
+margin: 5px 0px 0px 10px;
+}
+
+#whiteboxLeft .leftNav li a{
+color: #001f6a;
+font-weight:bold;
+padding-left: 10px;
+margin: 0px;
+list-style-type: none;
+background: url(/images/orangerightarrowsm.gif)  no-repeat;
+background-position: left 4px;
+display: block;
+}
+
+#whiteboxLeft .leftNav li li a{
+background-image: none;
+font-weight: normal;
+margin: 0px;
+}
+
+#whiteboxLeft .leftNav li li li a{
+background-image: none;
+font-weight: normal;
+margin: 0px;
+}
+
+#whiteboxLeft .leftNav li a:link 	{background-image: url(/images/orangerightarrowsm.gif);color: #264da7;text-decoration: none;}
+#whiteboxLeft .leftNav li a:visited	{background-image: url(/images/orangerightarrowsm.gif);color: #264da7;text-decoration: none;}
+#whiteboxLeft .leftNav li a:hover 	{background-image: url(/images/orangerightarrowsm.gif);color: #f7890c;text-decoration: underline;}
+#whiteboxLeft .leftNav li a:active 	{background-image: url(/images/orangerightarrowsm.gif);color: #264da7;text-decoration: none;}
+#whiteboxLeft .leftNav li.leftcurrent ul {
+margin-left: -10px;
+padding: 0;
+}
+#whiteboxLeft .leftNav li.leftcurrent {
+color: #e28521;
+font-weight: bold;
+padding-left: 10px;
+margin: 5px 0px 0px 0px;
+list-style-type: none;
+background: url(/images/orangerightactive.gif) no-repeat;
+background-position: left 4px;
+}
+#whiteboxLeft .leftNav li li.leftcurrent {
+color: #e28521;
+padding-left: 10px;
+margin: 5px 0px 0px 10px;
+list-style-type: none;
+background: url(/images/orangerightactive.gif) no-repeat;
+background-position: left 4px;
+
+}
+#whiteboxLeft .leftNav li li li.leftcurrent {
+color: #e28521;
+padding-left: 10px;
+margin: 5px 0px 0px 10px;
+list-style-type: none;
+background: url(/images/orangerightactive.gif) no-repeat;
+background-position: left 4px;
+}
+/*end template2 1 Column Layout-------------------------------------------*/
+
+/* Did You Know */
+#didYouKnow {
+background-color: #c7d5f2;
+border: 3px solid #264da7;
+padding: 4px;
+color: #000;
+font-size: 1.0em;
+font-weight: normal;
+margin: 35px 10px 10px 10px;
+}			
+
+#didYouKnow.fff {background-color: #fff;}
+
+#didYouKnow ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#didYouKnow li{
+background: url(/images/rbutton.gif) no-repeat;
+background-position: left 5px;
+padding-left: 10px;
+}
+
+#didYouKnow p {
+color: #000; 
+padding: 6px;
+}
+
+#didYouKnow ul li a:link 	{color: #264da7;text-decoration: underline;}
+#didYouKnow ul li a:visited	{color: #264da7;text-decoration: underline;}
+#didYouKnow ul li a:hover 	{color: #067ab4;text-decoration: underline;}
+#didYouKnow ul li a:active 	{color: #264da7;text-decoration: none;}
+
+/* Related links */
+#relatedLinks {
+background-color: #c7d5f2;
+border: 1px solid #264da7;
+padding: 6px;
+color: #000;
+font-size: 1.1em;
+font-weight: normal;
+margin: 10px;
+}			
+
+#relatedLinks.fff {background-color: #fff;}
+
+#relatedLinks ul{
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+#relatedLinks li{
+background: url(/images/rbutton.gif) no-repeat;
+background-position: 0 4px;
+padding-left: 6px;
+}
+
+#relatedLinks ul li a:link 		{color: #264da7;text-decoration: none;}
+#relatedLinks ul li a:visited	{color: #264da7;text-decoration: none;}
+#relatedLinks ul li a:hover 	{color: #067ab4;text-decoration: underline;}
+#relatedLinks ul li a:active 	{color: #264da7;text-decoration: none;}
+
+/* UtilBar */
+#utilbar {
+width: 150px;
+float: right;
+text-align: right;
+}
+
+#utilbar a{
+width: 25px;
+height: 35px;
+/* JYK-12/8/08-flipping order of the hover logic */
+background-position: 0 0; 
+/* background-position: 0 -35px; */
+margin: 0 auto;
+margin-left: 1em;
+display: block;
+float: left;
+}
+#utilbar a:hover {background-position: 0 -35px;}
+a#util_print {background-image: url(/images/util_print.gif);}
+a#util_print:hover {background-image: url(/images/util_print.gif);}
+a#util_email {background-image: url(/images/util_email.gif);}
+a#util_email:hover {background-image: url(/images/util_email.gif);}
+a#util_export {background-image: url(/images/util_export.gif);}
+a#util_export:hover {background-image: url(/images/util_export.gif);}
+a#util_help {background-image: url(/images/util_help.gif);}
+a#util_help:hover {background-image: url(/images/util_help.gif);}
+a#util_info {background-image: url(/images/util_info.gif);}
+a#util_info:hover {background-image: url(/images/util_info.gif);}
+a#util_lables {background-image: url(/images/util_lables.gif);}
+a#util_lables:hover {background-image: url(/images/util_lables.gif);}
+a#util_pdf {background-image: url(/images/util_pdf.gif);}
+a#util_pdf:hover {background-image: url(/images/util_pdf.gif);}
+
+#utilbar a .alt { display: none; }
+/* footer */
+#footer {
+background-image:url(/images/footer_bg.jpg);
+height: 41px;
+position:relative;		
+}
+
+
+/* New Colors */
+
+.c_888888 {color: #888888;}
+.c_264da7 {color: #264da7;}
+.c_f7890c {color: #f7890c;}
+.c_c7d5f2 {color: #c7d5f2;}
+.c_067ab4 {color: #067ab4;}
+.bg_264da7 {background-color: #264da7;}
+.bg_f7890c {background-color: #f7890c;}
+.bg_c7d5f2 {background-color: #c7d5f2;}
+.bg_067ab4 {background-color: #067ab4;}
+
+/* NEW FORM styling. Limited to profiles search pages.If applied to all form elements, integration with doeweb and with curent items such as header fastfinda nd orgselector dropdown will be difficult.*/
+.searchscreen label{
+width: 10em;
+float: left;
+text-align: right;
+margin-right: 0.5em;
+display: block
+}
+.searchscreen input{
+color: #000;
+background: #fee3ad;
+border: 1px solid #264da7
+}
+.formactionbtn {
+margin-left: 15em;
+}
+.formactionbtn input{
+color: #fff;
+background: #264da7;
+background-image:url(/images/submitbg.gif);
+height: 20px;
+margin: 0 1em;
+} 
+.formactionbtn input:hover{
+color: #000;
+background: #c7d5f2;
+text-decoration:underline;
+background-image:url(/images/submitbg_hover.gif);
+} 
+.floatformactionbtn input{
+color: #fff;
+background: #264da7;
+border: 1px solid #264da7;
+background-image:url(/images/submitbg.gif);
+height: 18px;
+margin: -4px .25em 0em .25em;
+} 
+.floatformactionbtn input:hover{
+color: #000;
+background: #c7d5f2;
+text-decoration:underline;
+background-image:url(/images/submitbg_hover.gif);
+} 
+.searchscreen .gradescheckbosx{
+width: 20em;
+}
+.searchscreen .gradescheckbosx input{
+display: block;
+float: left;
+background: #fee3ad;
+border: 0px;
+}
+.searchscreen .gradescheckbosx label{
+width: 0em;
+display: block;
+margin: 0.1em 0.4em 0;
+padding-right: 1em;
+float: left;
+clear: right;
+}
+.searchscreen select{
+background: #fee3ad;
+}
+/*End New Form*/
+
+
+
+
+/* START OLD DOE STYLE SHEET BELOW HERE. ALL NEW STYLES PLACE IN ABOVE CODE */
+
+
+/* TABLES */
+CAPTION{
+font-family: "verdana","arial","helvetica",sans-serif;
+font-size: 1.2em;
+font-weight: bold;
+text-align: left;
+}
+CAPTION.center{
+font-family: "verdana","arial","helvetica",sans-serif;
+font-size: 1.2em;
+font-weight: bold;
+text-align: center;
+}
+.border004386{
+border: thin solid #004386
+}
+.border91A8CE{
+border: thin solid #91A8CE
+}
+.borderccc{
+border: thin solid #ccc
+}.bordereee{
+border: thin solid #eee
+}
+.border000{
+border: thin solid #000
+}
+.borderall{
+border:1px solid #000;
+border-collapse:collapse;
+}
+.borderall td{
+border:1px solid #000;
+}
+.borderall th{
+border:1px solid #000;
+}
+.paragraph-section{
+border:1px solid #000;
+}
+.paragraph-section p{
+margin:0px;
+padding:0px;
+}
+TR{
+text-align: left;
+vertical-align: top;
+}
+TH{
+color:#000;
+background:#cccccc;
+border-spacing: 0px;
+border: none
+}
+TD{
+vertical-align: top;
+border-spacing: 0px
+}
+.nowrap{
+white-space: nowrap;
+}
+/* ALIGNMENT */
+.center{
+text-align: center;
+} 
+.left{
+text-align: left;
+} 
+.right{
+text-align: right;
+} 
+.middle{
+vertical-align: middle;
+} 
+.bottom{
+vertical-align: bottom;
+}
+/* FORMS */
+.fastfind INPUT{
+BORDER:  1px solid;
+FONT-WEIGHT: normal;
+FONT-SIZE: 8pt;
+COLOR: #000000;
+font-family:"verdana","arial","helvetica",sans-serif;
+}
+.fastfind INPUT.go{
+BORDER:  0px solid;
+FONT-WEIGHT: normal;
+FONT-SIZE: 8pt;
+COLOR: #000000;
+font-family:"verdana","arial","helvetica",sans-serif;
+}
+SELECT{
+BORDER-RIGHT: #003366 1px solid;
+BORDER-TOP: #003366 1px solid;
+BORDER-LEFT: 1px solid;
+BORDER-BOTTOM: 1px solid; 
+FONT-WEIGHT: normal;
+FONT-SIZE: .95em;
+COLOR: #000000;
+font-family:"verdana","arial","helvetica",sans-serif;
+BACKGROUND-COLOR: #ffffff
+}
+/* LISTS */
+OL.ii { 
+list-style-type: upper-roman; 
+}
+OL.aa { 
+list-style-type: upper-alpha; 
+}
+OL.a { 
+list-style-type: lower-alpha; 
+}
+OL.i { 
+list-style-type: lower-roman; 
+}
+a[title ="External Link"] { 
+padding-right: 1.3em;
+background: url(http://www.doe.mass.edu/images/icon_external.gif) no-repeat center right;
+text-decoration: none;  
+border-bottom: 1px dotted
+}
+/* TEXT SIZES, STYLES & WEIGHTS */
+.searchindent{
+padding-left: 20px;
+}
+.newblubg{
+background:#c7d5f2;
+}
+.nav{
+font-size:.1.0em;
+font-weight:normal; 
+}
+.lg{
+font-size:1.2em;
+font-weight:bold;
+}
+.med{
+font-size:1.1em;
+}
+.bold{
+font-weight: bold;
+}
+.em{
+font-style:italic;
+}
+.sup {
+vertical-align:super; 
+font-size: smaller;
+}
+.sub {
+vertical-align:sub;
+font-size: smaller;
+}
+.excelText { 
+mso-number-format:\@;
+}
+.inline {
+display: inline;
+}
+/* COLORS */
+.orn{
+color:#E28521; 
+}
+.red{
+color:#FF0000;
+}
+.wht{
+color:#FFF;
+text-decoration:none;
+}
+/*BACKGROUND COLORS */
+.eee { 
+background-color: #EEEEEE;
+}
+.ccc {
+background-color: #CCCCCC;
+}
+.fff {
+background-color: #FFFFFF;
+}
+.bg000 {
+background-color: #000000;
+}
+.bg004386 { /*darkest blue*/
+ background-color: #004386;
+}
+.bg91A8CE { /*medium blue*/
+background-color: #91A8CE;
+}
+.bgE9BB80 {
+background-color: #E9BB80; /*orange*/
+}
+.bge9bb80 {
+background-color: #E9BB80; /*orange*/
+}
+.bge2eaf6 {
+background-color: #E2EAF6; /*lightest blue*/
+}
+.bgFBD9B5 {
+background-color: #FBD9B5;/*light orange*/
+}
+.bgfbd9b5 {
+background-color: #FBD9B5;/*light orange*/
+}
+
+/* 11/21/13 commentign out these 3 styles. 
+they are not being called from anywhere and the images turn up in the broken link report. 
+The images hosted on MassGIS. I think we had them here initailly for testing.
+
+.bghatch1 {
+background: url(/images/yellow_green_forward_diagonal_thin.gif) repeat;
+}
+.bghatch2 {
+background: url(/images/black_forward_diagonal_thin.gif) repeat;
+}
+.bgdots1 {
+background: url(/images/dots7.gif) repeat;
+}
+*/
+
+/* DIV positioning */
+#edName { 
+position: absolute;
+left: 125px;
+top: 450px;
+width: 150px;
+font-size: 11px
+}
+
+  .borderline
+{
+    border-bottom:#888888 1px  solid;
+}
+ .borderleft
+{
+    border-left:#888888 1px  solid;
+}
+.borderright
+{
+   border-right:#888888 1px  solid;
+}
+ .borderleftdotted
+{
+    border-left:#888888 1px  dotted;
+}
+.borderleftbottom
+{
+    border-left:#888888 1px  solid;
+    border-bottom:#888888 1px  solid;
+}
+.borderrightbottom
+{
+    border-right:#888888 1px  solid;
+    border-bottom:#888888 1px  solid;
+}
+
+/*report card overview*/
+
+.school
+{
+background-color:#506EAC;
+text-align:right;
+color:#FFFFFF
+}
+
+.district-state
+{
+background-color:#B4C4DE;
+text-align:right;
+}	 
+
+H2.rc
+{
+color:#264da7;
+font-weight:bold;
+font-size:1.4em ;
+}
