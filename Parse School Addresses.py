@@ -53,16 +53,19 @@ for row in addresses:
 
 header = ['orgcode', 'address', 'latitude', 'longitude']
 
-with open('data/school addresses.csv', 'w', encoding='utf-8') as f:
+with open('data/address-source/school addresses.csv', 'w', encoding='utf-8') as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(header)
     for row in addresses:
         writer.writerow(row)
 
+# Closed Charter Addresses
 outrows = []
-r = open('data/closed charter school addresses.csv', 'r')
+r = open('data/address-source/closed charter school addresses.csv', 'r')
 reader = csv.reader(r)
 for row in reader:
+    if row[0] == 'orgcode':
+        continue
     if row[3] == '':
         print(row[2])
         location = geogoog.geocode(row[2], timeout=10, sensor=False)
@@ -71,13 +74,40 @@ for row in reader:
             row[4] = location.longitude
         except:
             print('Address not found')
-        outrows.append(row)
+    outrows.append(row)
 r.close()
 
+
 header = ['orgcode', 'school', 'address', 'latitude', 'longitude']
-with open('data/closed charter school addresses.csv', 'w', encoding='utf-8') as f:
+with open('data/address-source/closed charter school addresses.csv', 'w', encoding='utf-8') as f:
     writer = csv.writer(f, lineterminator='\n')
     writer.writerow(header)
     for row in outrows:
         writer.writerow(row)
+
+# Closed BPS addresses
+outrows = []
+r = open('data/address-source/closed BPS school addresses.csv', 'r')
+reader = csv.reader(r)
+for row in reader:
+    if row[0] == 'orgcode':
+        continue
+    if row[3] == '':
+        print(row[2])
+        location = geogoog.geocode(row[2], timeout=10, sensor=False)
+        try:
+            row[3] = location.latitude
+            row[4] = location.longitude
+        except:
+            print('Address not found')
+    outrows.append(row)
+r.close()
+
+header = ['orgcode', 'school', 'address', 'latitude', 'longitude']
+with open('data/address-source/closed BPS school addresses.csv', 'w', encoding='utf-8') as f:
+    writer = csv.writer(f, lineterminator='\n')
+    writer.writerow(header)
+    for row in outrows:
+        writer.writerow(row)
+
 
